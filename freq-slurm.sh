@@ -16,7 +16,7 @@
 
 python -u -c "import PyHipp as pyh; \
 pyh.FreqSpectrum(saveLevel=1); \
-pyh.FreqSpectrum(loadHighPass=True, pointsPerWindow=3000, saveLevel=1);
+pyh.FreqSpectrum(loadHighPass=True, pointsPerWindow=3000, saveLevel=1);"
 
 aws sns publish --topic-arn arn:aws:sns:ap-southeast-1:206333089166:awsnotify --message "freqJobDone"
 
